@@ -17,7 +17,7 @@ object MyApp extends App {
   def even(num: Int) = if (num % 2 == 0) true else false
 
   //Task5
-  def odd(num: Int) = if (even(3)) true else false
+  def odd(num: Int) = !even(num)
 
   //Task6
   def wordsToLower(word: String*) = word map (_.toLowerCase())
@@ -35,13 +35,13 @@ object MyApp extends App {
   }
 
   //Task9
-  def areWeekendDays(day:String*) = day map( isWeekendDay(_))
+  def areWeekendDays(day:String*) = day map(isWeekendDay(_))
 
   //Task10
   areWeekendDays("friday", "Saturday", "Sunday") foreach(println)
 
   //Task11
-  def stringandInt(word:String, num:Int) = print(word * num)
+  def stringAndInt(word:String, num:Int) = print(word * num)
 
 }
 
